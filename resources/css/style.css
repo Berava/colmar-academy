@@ -4,9 +4,7 @@ html {
 }
 
 /* TODO: comment this selector */
-/* header,
-#banner,
-#banner-right {
+/* .column-right {
   border: 1px black solid;
 } */
 
@@ -80,24 +78,27 @@ header {
   display: flex;
 }
 
-#text-container {
+.aside-container {
   display: flex;
   align-items: center;
+  width: 40%;
 }
 
 .media-container {
   width: 60%;
-  height: auto;
-  overflow: hidden;
+  max-width: 60rem;
   margin: 2rem 1.5rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px #777777;
+  height: auto;
+  overflow: hidden;
 }
 
 .media-container img {
   max-width: 100%;
   height: auto;
   display: block;
+
 }
 
 .media-text {
@@ -109,13 +110,14 @@ header {
 .media-text h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .media-text h2 {
   margin-bottom: 2rem;
 }
 
-#button-start {
+#btn-start {
   background-color: #4A4A4A;
   color: white;
   text-align: center;
@@ -123,17 +125,96 @@ header {
   border-radius: 0.3rem;
 }
 
-#button-start:hover {
+#btn-start:hover {
   background-color: white;
   color: #4A4A4A;
 }
 
-#button-start:active {
+#btn-start:active {
   box-shadow: 3px 3px 3px #777777;
   color: #9B9B9B;
 }
 
-#button-start h3 {
+#btn-start h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+/* Information section */
+#information {
+  margin-top: 2rem;
+  background-color: #FFFFFF;
+  display: flex;
+}
+ #information .media-container {
+   margin-top: 0rem ;
+   border-radius: unset;
+   box-shadow: none;
+ }
+
+ blockquote h1 {
+   margin: 2rem 0rem 1.5rem 0rem;
+   font-size: 3rem;
+   font-weight: bold;
+ }
+
+ blockquote footer {
+   font-weight: bold;
+   margin-top: 2rem;
+ }
+
+.side-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+}
+
+.news .media-container,
+.small-media-container {
+  height: auto;
+  overflow: hidden;
+  width: 35%;
+  margin: 1rem;
+}
+
+.small-media-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news .media-text {
+  width: 65%;
+}
+
+.news .media-text h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.news .media-text h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.news .media-text a {
+  color: #4483CE;
+}
+
+.news .media-text a:hover {
+  text-decoration: underline;
+}
+
+.news .media-text a:active {
+
+}
+
+.side-right .news:last-child {
+  background-color: #D8D8D8;
 }

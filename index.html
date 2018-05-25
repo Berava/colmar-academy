@@ -11,7 +11,7 @@
   <body>
 
     <!-- Header of the colmar academy -->
-    <header>
+    <header class="white-background">
       <div id="logo">
         <img src="./resources/images/ic-logo.svg" alt="A lion, logo of the colmar academy" />
         <h1><a href="./index.html">COLMAR<span id="mid-name">ACADEMY</span></a></h1>
@@ -27,7 +27,7 @@
     </header>
 
     <!-- Banner of the site -->
-    <section id="banner">
+    <section id="banner" class="grey-background">
       <div class="media-container">
         <img src="./resources/images/banner.jpg" alt="top down shot showing people reading on a table outdoor" />
       </div>
@@ -43,17 +43,17 @@
     </section>
 
     <!-- Information section -->
-    <section id="information">
-        <div class="media-container">
-          <img src="./resources/images/information-main.jpg" alt="A man reading a book sitting on a bench" />
-          <blockquote cite="">
-            <h1>It doesn't hurt to keep practicing</h1>
-            <h2>
-              "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
-            </h2>
-            <footer>- Emmanuel, Sr Strategist at Hiring.com</footer>
-          </blockquote>
-        </div>
+    <section class="main-container white-background">
+      <div class="media-container">
+        <img src="./resources/images/information-main.jpg" alt="A man reading a book sitting on a bench" />
+        <blockquote cite="">
+          <h1>It doesn't hurt to keep practicing</h1>
+          <h2>
+            "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
+          </h2>
+          <footer>- Emmanuel, Sr Strategist at Hiring.com</footer>
+        </blockquote>
+      </div>
       <div class="side-right">
         <div class="news">
           <div class="media-container">
@@ -75,7 +75,7 @@
             <a href="#"><h2>Read more</h2></a>
           </div>
         </div>
-        <div class="news">
+        <div class="news grey-background">
           <div class="small-media-container">
             <img src="./resources/images/information-guest-lecture.jpg" alt="photography of Oliver Sack" />
           </div>
@@ -88,9 +88,9 @@
       </div>
     </section>
 
-    <!-- Learning section -->
-    <section id="learning">
-      <h1>Start learning</h1>
+    <!-- section-item section -->
+    <section class="section-item grey-background">
+      <h1>Start section-item</h1>
       <div id="courses-container">
         <div class="course">
           <div class="course-img">
@@ -159,6 +159,55 @@
         </div>
       </div>
     </section>
+
+    <!-- Thesis section -->
+    <section class="section-item">
+      <h1>Thesis exhibit</h1>
+      <div class="main-container">
+        <div class="media-container">
+          <video src="./resources/videos/thesis.mp4" autoplay loop poster="">
+            <p>A video of a building's shadow timelapse</p>
+          </video>
+          <blockquote cite="">
+            <h1>Reimagine urban</h1>
+            <h2>
+              "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
+            </h2>
+          </blockquote>
+        </div>
+        <div class="side-right">
+          <div class="news grey-background">
+            <div class="media-container">
+              <img src="./resources/images/thesis-fisma.jpg" alt="top down shot of a hand writing and designing on a paper" />
+            </div>
+            <div class="media-text">
+              <h1>Fisma: Design and Prototype</h1>
+              <h2>Designer showcase of new prototype product</h2>
+            </div>
+          </div>
+          <div class="news">
+            <div class="small-media-container">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="picture of New York" />
+            </div>
+            <div class="media-text">
+              <h1>Now and Then</h1>
+              <h2>Research study about New York</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy;	2016 Colmar Academy. All rights reserved</p>
+      <nav>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
+    </footer>
 
   </body>
 </html>

@@ -12,6 +12,7 @@ html {
 
 body {
   width: 100%;
+  background-color: #FFFFFF;
 }
 
 h1 {
@@ -31,6 +32,14 @@ a {
   text-decoration: none;
 }
 
+.white-background {
+  background-color: #FFFFFF;
+}
+
+.grey-background {
+  background-color: #D8D8D8;
+}
+
 /* Header */
 header {
   height: 4rem;
@@ -41,7 +50,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #FFFFFF;
 }
 
 #logo {
@@ -54,27 +62,26 @@ header {
 }
 
 /* Navigation bar */
-#menu > li {
+ul > li {
   display: inline;
   margin-right: 1rem;
 }
 
-#menu >li:last-child {
+ul >li:last-child {
   margin-right: 1.5rem;
 }
 
-#menu li a:active {
+ul li a:active {
   color: #9B9B9B;
 }
 
-#menu li a:hover {
+ul li a:hover {
   text-decoration: underline;
 }
 
 /* Main article - banner */
 #banner {
   margin-top: 4rem;
-  background-color: #D8D8D8;
   display: flex;
 }
 
@@ -98,7 +105,6 @@ header {
   max-width: 100%;
   height: auto;
   display: block;
-
 }
 
 .media-text {
@@ -141,12 +147,11 @@ header {
 }
 
 /* Information section */
-#information {
+.main-container {
   margin-top: 2rem;
-  background-color: #FFFFFF;
   display: flex;
 }
- #information .media-container {
+.main-container .media-container {
    margin-top: 0rem ;
    border-radius: unset;
    box-shadow: none;
@@ -216,21 +221,19 @@ header {
 }
 
 .side-right .news:last-child {
-  background-color: #D8D8D8;
   margin-bottom: 2rem;
 }
 
-/* Learning section */
-#learning {
-  background-color: #D8D8D8;
+/* section-item section */
+.section-item {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#learning h1 {
-  padding: 2rem 0rem;
+.section-item h1 {
+  padding-top: 2rem;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -252,6 +255,7 @@ header {
 }
 
 .course-img {
+  overflow: hidden;
 }
 
 .course-img img {
@@ -270,4 +274,25 @@ header {
 
 .course-details h3:last-child {
   margin-bottom: 1.5rem;
+}
+
+/* Thesis section */
+
+.media-container video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  height: 4rem;
+  border-top: 1px solid #D8D8D8;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p,
+footer nav {
+  margin: 1rem 0rem 0rem 1.5rem;
 }

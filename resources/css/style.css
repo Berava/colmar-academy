@@ -1,5 +1,7 @@
 /* Universal Styles */
 html {
+  font-family: "Poppins", sans-serif;
+  color: #4A4A4A;
   font-size: 16px;
 }
 
@@ -9,8 +11,6 @@ html {
 } */
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: #4A4A4A;
   width: 100%;
 }
 
@@ -217,4 +217,57 @@ header {
 
 .side-right .news:last-child {
   background-color: #D8D8D8;
+  margin-bottom: 2rem;
+}
+
+/* Learning section */
+#learning {
+  background-color: #D8D8D8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#learning h1 {
+  padding: 2rem 0rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#courses-container {
+  width: 100%;
+  padding: 0rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  width: 25%;
+}
+
+.course-img {
+}
+
+.course-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course-details h2 {
+  margin: 1rem 0rem 0.5rem 1rem;
+}
+
+.course-details h3 {
+  margin: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.course-details h3:last-child {
+  margin-bottom: 1.5rem;
 }

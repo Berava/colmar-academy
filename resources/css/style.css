@@ -16,14 +16,18 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
   font-size: 1.125rem;
 }
 
@@ -38,6 +42,11 @@ a {
 
 .grey-background {
   background-color: #D8D8D8;
+}
+
+.main {
+  max-width: 2560px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -83,6 +92,7 @@ ul li a:hover {
 #banner {
   margin-top: 4rem;
   display: flex;
+  justify-content: center;
 }
 
 .aside-container {
@@ -114,7 +124,6 @@ ul li a:hover {
 }
 
 .media-text h1 {
-  font-size: 3rem;
   margin-bottom: 2rem;
   font-weight: bold;
 }
@@ -150,6 +159,8 @@ ul li a:hover {
 .main-container {
   margin-top: 2rem;
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .main-container .media-container {
    margin-top: 0rem ;
@@ -157,15 +168,15 @@ ul li a:hover {
    box-shadow: none;
  }
 
- blockquote h1 {
+ blockquote h2 {
    margin: 2rem 0rem 1.5rem 0rem;
-   font-size: 3rem;
    font-weight: bold;
  }
 
  blockquote footer {
    font-weight: bold;
    margin-top: 2rem;
+   border: none;
  }
 
 .side-right {
@@ -187,6 +198,10 @@ ul li a:hover {
   margin: 1rem;
 }
 
+.news .media-container:first-child {
+  margin-top: 0rem;
+}
+
 .small-media-container img {
   max-width: 100%;
   height: auto;
@@ -197,15 +212,13 @@ ul li a:hover {
   width: 65%;
 }
 
-.news .media-text h1 {
-  font-weight: normal;
-  font-size: 2rem;
+.news .media-text h2 {
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.news .media-text h2 {
+.news .media-text h3 {
   margin-bottom: 0.5rem;
-  font-size: 1.5rem;
 }
 
 .news .media-text a {
@@ -234,12 +247,10 @@ ul li a:hover {
 
 .section-item h1 {
   padding-top: 2rem;
-  font-size: 3rem;
   font-weight: bold;
 }
 
 #courses-container {
-  width: 100%;
   padding: 0rem 2.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -252,6 +263,7 @@ ul li a:hover {
   flex-direction: column;
   margin: 2rem;
   width: 25%;
+  max-width: 525px;
 }
 
 .course-img {
@@ -266,6 +278,7 @@ ul li a:hover {
 
 .course-details h2 {
   margin: 1rem 0rem 0.5rem 1rem;
+  font-weight: bold;
 }
 
 .course-details h3 {
@@ -277,6 +290,10 @@ ul li a:hover {
 }
 
 /* Thesis section */
+
+.news.grey-background .media-container {
+  margin-top: 1rem;
+}
 
 .media-container video {
   max-width: 100%;

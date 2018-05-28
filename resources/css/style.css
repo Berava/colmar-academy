@@ -5,11 +5,6 @@ html {
   font-size: 16px;
 }
 
-/* TODO: comment this selector */
-/* .column-right {
-  border: 1px black solid;
-} */
-
 body {
   width: 100%;
   background-color: #FFFFFF;
@@ -49,7 +44,33 @@ a {
   margin: 0 auto;
 }
 
-/* Header */
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 760px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 0.75rem;
+  }
+
+}
+
+/* Header and Navigation bar*/
 header {
   height: 4rem;
   display: flex;
@@ -64,13 +85,13 @@ header {
 #logo {
   display: flex;
   padding-left: 1.5rem;
+  align-items: center;
 }
 
 #mid-name {
   color: #9B9B9B;
 }
 
-/* Navigation bar */
 ul > li {
   display: inline;
   margin-right: 1rem;
@@ -86,6 +107,31 @@ ul li a:active {
 
 ul li a:hover {
   text-decoration: underline;
+}
+
+header #mobile-menu {
+  display:none;
+}
+
+@media only screen and (max-width: 480px) {
+  #logo h2 {
+      display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  #logo,
+  header #desktop-menu {
+    display: none;
+  }
+
+  header #mobile-menu {
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 /* Main article - banner */
@@ -138,6 +184,7 @@ ul li a:hover {
   text-align: center;
   width: 100%;
   border-radius: 0.3rem;
+  transition: background-color 500ms ease-out, color 500ms ease-out;
 }
 
 #btn-start:hover {
@@ -153,6 +200,35 @@ ul li a:hover {
 #btn-start h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #banner {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .aside-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .media-container {
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    overflow: hidden;
+  }
+
+  #btn-start {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
 }
 
 /* Information section */
@@ -230,7 +306,7 @@ ul li a:hover {
 }
 
 .news .media-text a:active {
-
+  color: #0B5EC2;
 }
 
 .side-right .news:last-child {
@@ -312,4 +388,12 @@ footer {
 footer p,
 footer nav {
   margin: 1rem 0rem 0rem 1.5rem;
+}
+
+/* Media Queries */
+
+
+
+@media only screen and (max-width: 760px) {
+
 }

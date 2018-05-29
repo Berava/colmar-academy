@@ -296,6 +296,11 @@ header #mobile-menu {
 .news {
   display: flex;
   align-items: center;
+  transition: background-color 500ms ease-out;
+}
+
+.news:hover {
+  background-color: #D8D8D8;
 }
 
 .news .media-container,

@@ -16,15 +16,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.125rem;
+  font-size: 2rem;
 }
 
 a {
@@ -48,20 +44,8 @@ a {
 /* Universal Styles - Media Queries */
 
 @media only screen and (max-width: 1024px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.125rem;
-  }
-
-  h4 {
-    font-size: 1rem;
+  html {
+    font-size: 12px;
   }
 }
 
@@ -70,7 +54,7 @@ a {
     font-size: 0.75rem;
   } */
   html {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 
@@ -410,7 +394,7 @@ header #mobile-menu {
 }
 
 #courses-container {
-  padding: 0rem 2.5rem;
+  padding: 0rem 4.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -420,8 +404,8 @@ header #mobile-menu {
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
-  width: 25%;
+  margin: 2rem 2rem 2rem 0rem;
+  width: 30%;
   max-width: 525px;
 }
 

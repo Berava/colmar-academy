@@ -54,7 +54,7 @@ a {
     font-size: 0.75rem;
   } */
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -80,7 +80,7 @@ a {
 
 /* Header and Navigation bar*/
 header {
-  height: 4rem;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,11 +88,20 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  font-size: 1.5rem;
+}
+
+header h2 {
+  font-size: 1.5em;
+}
+
+header a {
+  font-size: 1em;
 }
 
 #logo {
   display: flex;
-  padding-left: 1.5rem;
+  padding-left: 24px;
   align-items: center;
 }
 
@@ -102,18 +111,18 @@ header {
 
 ul > li {
   display: inline;
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 ul >li:last-child {
-  margin-right: 1.5rem;
+  margin-right: 24px;
 }
 
-ul li a:active {
+ul a:active {
   color: #9B9B9B;
 }
 
-ul li a:hover {
+ul a:hover {
   text-decoration: underline;
 }
 
@@ -145,11 +154,23 @@ header #mobile-menu {
 
 /* Main article - banner */
 #banner {
-  margin-top: 4rem;
+  margin-top: 64px;
   display: flex;
   justify-content: center;
+  font-size: 1.2rem;
 }
 
+#banner h1 {
+  font-size: 2.5em;
+}
+
+#banner h2 {
+  font-size: 1.5em;
+}
+
+#banner h3 {
+  font-size: 1.2em;
+}
 .aside-container {
   display: flex;
   align-items: center;
@@ -158,9 +179,9 @@ header #mobile-menu {
 
 .media-container {
   width: 60%;
-  max-width: 60rem;
-  margin: 2rem 1.5rem;
-  border-radius: 1rem;
+  max-width: 960px;
+  margin: 32px 24px;
+  border-radius: 16px;
   box-shadow: 5px 5px 5px #777777;
   height: auto;
   overflow: hidden;
@@ -179,12 +200,12 @@ header #mobile-menu {
 }
 
 .media-text h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   font-weight: bold;
 }
 
 .media-text h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 #btn-start {
@@ -192,7 +213,7 @@ header #mobile-menu {
   color: white;
   text-align: center;
   width: 100%;
-  border-radius: 0.3rem;
+  border-radius: 4.8px;
   transition: background-color 500ms ease-out, color 500ms ease-out;
 }
 
@@ -207,8 +228,8 @@ header #mobile-menu {
 }
 
 #btn-start h3 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 /* Main article - banner - Media Queries */
@@ -217,6 +238,12 @@ header #mobile-menu {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .media-text {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
   }
 
   .aside-container {
@@ -234,7 +261,7 @@ header #mobile-menu {
   }
 
   #btn-start {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
   }
 }
 
@@ -248,8 +275,21 @@ header #mobile-menu {
 #mobile-img3 {
   display: none;
 }
+
 .main-container {
-  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.main-container h2 {
+  font-size: 1.2em;
+}
+
+.main-container h3 {
+  font-size: 0.75em;
+}
+
+.main-container {
+  margin-top: 32px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -261,13 +301,13 @@ header #mobile-menu {
  }
 
  blockquote h2 {
-   margin: 2rem 0rem 1.5rem 0rem;
+   margin: 16px 0px 24px 0px;
    font-weight: bold;
  }
 
  blockquote footer {
    font-weight: bold;
-   margin-top: 2rem;
+   margin-top: 32px;
    border: none;
  }
 
@@ -292,11 +332,11 @@ header #mobile-menu {
   height: auto;
   overflow: hidden;
   width: 35%;
-  margin: 1rem;
+  margin: 16px;
 }
 
 .news .media-container:first-child {
-  margin-top: 0rem;
+  margin-top: 0px;
 }
 
 .small-media-container img {
@@ -311,11 +351,11 @@ header #mobile-menu {
 
 .news .media-text h2 {
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .news .media-text h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .news .media-text a {
@@ -331,13 +371,13 @@ header #mobile-menu {
 }
 
 .side-right .news:last-child {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 /* Information section - Media Queries */
 @media only screen and (max-width: 480px) {
   .main-container {
-    margin-top: 1rem;
+    margin-top: 16px;
   }
 
   #desktop-img1,
@@ -358,22 +398,20 @@ header #mobile-menu {
 
   .news {
     flex-direction: column;
-    padding: 0rem 1rem;
+    padding: 0px 16px;
   }
 
   .news .media-container,
   .news .small-media-container {
     width: 100%;
-    margin-right: 0rem;
-    margin-left: 0rem;
-    margin-top: 3.5rem;;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 56px;;
   }
 
   .news .media-text {
     width: 100%;
   }
-
-/* TODO */
 
   .side-right .news:last-child {
     background-color: #FFFFFF;
@@ -386,25 +424,35 @@ header #mobile-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.2rem;
 }
 
 .section-item h1 {
-  padding-top: 2rem;
+  padding: 32px 0px 16px 0px;
   font-weight: bold;
 }
 
 #courses-container {
-  padding: 0rem 4.5rem;
+  padding: 0px 72px;
+  margin-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.course h2 {
+  font-size: 1.2em;
+}
+
+.course h3 {
+  font-size: 1em;
 }
 
 .course {
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  margin: 2rem 2rem 2rem 0rem;
+  margin: 16px 16px 16px 0px;
   width: 30%;
   max-width: 525px;
 }
@@ -420,16 +468,16 @@ header #mobile-menu {
 }
 
 .course-details h2 {
-  margin: 1rem 0rem 0.5rem 1rem;
+  margin: 16px 0px 8px 16px;
   font-weight: bold;
 }
 
 .course-details h3 {
-  margin: 0.5rem 0rem 0.5rem 1rem;
+  margin: 8px 0px 8px 16px;
 }
 
 .course-details h3:last-child {
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 /* section-item section - Media Queries */
@@ -443,19 +491,18 @@ header #mobile-menu {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0rem;
-    margin: 1rem;
+    padding: 0px;
+    margin: 16px;
   }
 
   .course {
-    margin: 0.5rem 0.5rem 0 0.5rem;
+    margin: 8px 8px 0px 8px;
     background-color: #D8D8D8;
     width: 95%;
   }
 
   .course-details h2 {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 24px;
     font-weight: normal;
   }
 
@@ -464,14 +511,14 @@ header #mobile-menu {
   }
 
   #courses-container .course:last-child {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 }
 
 /* Thesis section */
 
 .news.grey-background .media-container {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 .media-container video {
@@ -491,7 +538,7 @@ header #mobile-menu {
   }
 
   .main-container .media-container {
-    margin: 0rem 0rem 1.5rem 0rem;
+    margin: 0px 0px 24px 0px;
   }
 }
 

@@ -455,6 +455,11 @@ header #mobile-menu {
   margin: 16px 16px 16px 0px;
   width: 30%;
   max-width: 525px;
+  transition: box-shadow 500ms ease-out;
+}
+
+.course:hover {
+  box-shadow: 8px 8px 12px #777777;
 }
 
 .course-img {
